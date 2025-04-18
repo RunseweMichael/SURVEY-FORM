@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="survey-form.css">
+</head>
+<body>
+    <div id="container">
+        
+        <h1 style="font-size: 25px;">KingSeraph Survey Form</h>
+        <p id="description" style="font-size: 18px;">Please take your time to enter your details</p>
+
+        <br>
+
+        <fieldset>
+            <form id="survey-form">
+                <label for="Name" id="name-label";"">Name</label> <br>
+                <input type="text" id="name" required placeholder="Enter your name">
+            
+                <br><br>
+            
+                <label for="Email" id="email-label">Email</label> <br>
+                <input type="email" id="email" required placeholder="Enter your Email" minlength=12>
+            
+                <br><br>
+            
+                <label for="Phone Number" id="number-label">Phone Number (optional)</label><br>
+                <input type="number" id="number" placeholder="Enter your phone number" min="12" max="20">
+            
+                <br><br>
+            
+                <label for="Text">Please select your current Employment status</label><br>
+                <select id="dropdown">
+                    <option>Select your status</option>
+                    <option>Unemployed</option>
+                    <option>Fully Employed</option>
+                    <option>Self Employed</option>
+                    <option>Partly Employed</option>
+                </select>
+            
+                <br><br>
+            
+                <p>Would you recommend our services to your friends and family?</p>
+                <input type="radio" name="response" value="yes">
+                <label for="">Yes</label>
+                <br>
+                <input type="radio" name="response" value="no">
+                <label for="">No</label>
+                <br>
+                <input type="radio" name="response" value="maybe">
+                <label for="">Maybe</label>
+
+                <br><br>
+
+                <p>Which of our services would you love us to improve on? (Click all that applies to you)</p>
+                <input type="checkbox" value="c.services">
+                <label for="">Customer Services</label>
+                <br>
+                <input type="checkbox" value="c.relation">
+                <label for="">Customer Relation</label>
+                <br>
+                <input type="checkbox" value="d.time">
+                <label for="">Delivery Time</label>
+                <br>
+                <input type="checkbox" value="o.services">
+                <label for="">Online Services</label>
+                <br>
+                <input type="checkbox" value="r&freebies">
+                <label for="">Rewards and Freebies</label>
+                
+                <br><br>
+
+                <p>Please state any suggestions you have for us.</p>
+                <textarea rows="5" cols="30" id="textarea" placeholder="Enter your comment here"></textarea>
+            
+                <br><br>
+            
+                <button type="submit" id="submit">Submit</button>
+
+            </form>
+
+        </fieldset>
+    </div>
+</body>
+</html>
